@@ -3,15 +3,15 @@ import React from 'react';
 
 const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
-    if (message.includes('hello')) {
-      actions.handleHello();
-    }
-
-    if (message.includes('dog')) {
+    // if message starts with special/dog
+    
+    if (message.toLowerCase().startsWith('special') && message.includes('dog')) {
       actions.handleDog();
     }
 
-    actions.handleMessage(message);
+    else {
+      actions.handleMessage(message);
+    }
   };
 
   return (

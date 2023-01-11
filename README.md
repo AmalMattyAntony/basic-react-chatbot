@@ -2,6 +2,9 @@
 
 This is a basic react chatbot app made using [react-chatbot-kit](https://fredrikoseberg.github.io/react-chatbot-kit-docs/) and uses [hugging face inference API] (https://huggingface.co/docs/api-inference) for the backend.
 
+Get a token following the steps [here](https://huggingface.co/docs/api-inference/quicktour) and set it .env (refer .sample-env)
+
+
 ### `npm start`
 
 Runs the app in the development mode.\

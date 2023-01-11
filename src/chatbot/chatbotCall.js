@@ -8,7 +8,10 @@ async function query_api(data) {
 			method: "POST",
 			body: JSON.stringify(data),
 		}
-	);
+	).catch((error) => {
+		console.log(error);
+		return "Error: " + error;
+	});
 	const result = await response.json();
 	return result;
 }
